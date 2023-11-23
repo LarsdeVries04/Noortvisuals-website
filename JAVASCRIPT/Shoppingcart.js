@@ -3,7 +3,7 @@ import {products} from '../JAVASCRIPT/data.js';
 
 /*to shop button*/
 const backbtn = document.querySelector(".back-to-shop");
-backbtn.addEventListener("click", () => {document.location.href = 'store.html'});
+backbtn.addEventListener("click", () => {document.location.href = 'Store.html'});
 /*to shop button*/
 
 /*cartsummaryHTML*/
