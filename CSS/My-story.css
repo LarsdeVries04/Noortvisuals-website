@@ -1,0 +1,23 @@
+body{
+    margin: 0px;
+    background-color: lightgray;
+    font-family: Arial;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    padding-bottom: 2000px;
+}
+.My-story{
+    background-color:lightgray;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    padding-left: 2px;
+}
+.foto{
+    -webkit-box-reflect:below 10px url(images/half\ box.psd);
+}
+.scroll{
+    -webkit-box-reflect:unset;
+}

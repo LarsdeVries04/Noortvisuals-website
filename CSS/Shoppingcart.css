@@ -1,0 +1,131 @@
+body{
+    margin: 0px;
+    background-color: rgb(178, 202, 233);
+    font-family: Arial;
+    padding: 100px 400px 0px 400px;
+}
+.back-to-shop{
+    position: absolute;
+    left: 5px;
+    top: 105px;
+    cursor: pointer;
+    background-color: rgb(42, 95, 165);
+    color: white;
+    padding: 5px 5px;
+    border-radius: 5px;
+    transition: 500ms;
+}
+.back-to-shop:hover{
+    background-color:rgb(28, 64, 112);
+}
+.shoppingcartdiv{
+    font-size: 30px;
+    padding: 100px 0px 10px 0px;
+}
+.fa-cart-shopping{
+    cursor: text;
+    display: inline;
+}
+.fa-cart-shopping span{
+ margin-left: 10px;   
+}
+.totaloverview{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.nothingincart{
+    display: flex;
+    background-color: white;
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.nothingincart span{
+    font-size: 25px;
+    font-style: italic;
+   
+}
+.cartitemdiv{
+    border: 1px solid black;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    background-color: white;
+}
+.productname{
+    display: flex;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 5px 0px 0px 5px;
+}
+.productimgdiv{
+   display: flex;
+}
+.productimgdiv img{
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+}
+.rightitemside{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left:20px;
+}
+.righttopdiv{
+    display: flex;
+    justify-content: end;
+}
+.itemcost{
+    font-size: 20px;
+    margin:5px 5px 0px 0px;
+}
+.rightmiddlediv{
+    display: flex;
+    font-size: 40PX;
+    color: rgb(42, 95, 165);
+    align-items: center;
+}
+.fa-heart, .fa-trash-can{
+    margin-right:10px;
+    border: 1px solid white;
+    transition: 100ms;
+    cursor: pointer;
+    padding: 5px;
+}
+.fa-heart:hover, .fa-trash-can:hover{
+    color: rgb(28, 64, 112);
+    text-shadow: 2px 2px 5px rgba(56, 96, 148, 0.623);
+    border: 1px solid rgb(28, 64, 112);
+    padding: 10px;
+    border-radius: 5px;
+}
+.rightbottomdiv{
+    justify-content: space-between;
+    display: flex;
+}
+.item-quantity select{
+    color:  rgb(42, 95, 165);
+    font-size: 25px;
+    padding: 5px 2px 5px 2px;
+    border: 2px solid;
+    border-radius: 2px;
+}
+.rightbottomdiv span{
+    display: flex;
+    margin: 0px 10px 10px 0px;
+    font-size: 20px;
+    align-items: end;
+}
+.overview{
+    background-color: white;
+    border: 1px solid black;
+    margin: 10px;
+}
+.overviewtext{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 700;
+    margin: 10px 0px 0px 10px;
+}

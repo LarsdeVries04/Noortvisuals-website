@@ -1,0 +1,139 @@
+/*body-template 
+body{
+    margin: 0px;
+    background-color: lightgray;
+    padding-bottom: 3000px;
+    font-family: Arial;
+    padding-top: 100px;
+    padding-left: 200px;
+}
+*/
+/*Header*/
+a{
+    color:currentColor
+}
+.Header-div{
+    background-color:rgb(255, 255, 255);
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    z-index: 100;
+}
+.Header-div .middel{
+    display: flex;
+    justify-content:center;
+    flex: 1;
+}
+.NV-logo-img{
+    width: 50px;
+}
+.NV-tekst{
+    font-size: 50px;
+    font-weight: 500;
+    font-family: Playfair Display, arial;
+    color: black;
+    text-decoration: none;
+    margin-left:-1px;
+}
+.HAM-img{
+    width: 50px;
+}
+.HAM-button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 9px;
+    transition: 0.4s;
+    border-radius:200px;
+    margin-left: 5px;
+}
+.HAM-button:hover{
+    background-color: rgb(220, 220, 220);
+}
+.a-font{text-decoration: none;
+}
+.account{
+    background-color:  rgb(19, 0, 36);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 5px 5px 5px rgba(19, 0, 36, 0.5);
+    transition: 0.5s;
+    font-style: none;
+    border: 2px solid rgb(19, 0, 36);
+    color: rgb(255, 255, 255);
+    font-weight:bolder;
+}
+.account:hover{
+    transform: translateY(-2px);
+    background-color: rgb(255, 255, 255);
+    color: rgb(19, 0, 36);
+}
+@media (max-width: 1050px) {
+    .NV-tekst {
+      display: none;
+    }
+  }
+/*Header*/
+/*Sidebar*/
+.Sidebar-div{
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    bottom: 0px;
+    width: 200px;
+    background: rgb(255, 255, 255);
+    transition: all 0.6s ease-in-out;
+    flex-direction:column; 
+    display: flex;
+    z-index: 99;
+    left: -100%;
+    border-top: 1px solid black;
+    transition: 0.5s;
+}
+.Sidebar-div a{
+    color: rgb(160, 156, 156);
+    display: block;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 5px 2px;
+    margin-left:5px;
+    margin-right: 5px;
+    border-radius: 4px;
+    transition: 0.25s;
+    font-size: 25px;
+}
+.Sidebar-div a:hover{
+    background-color: lightgray;
+    color: black;
+    transform: translateX(4px);
+}
+.Sidebar-div .Instellingen{
+    position: absolute;
+    bottom: 0px;
+}
+.Instellingen a{
+    padding-right: 62px;
+}
+.Socials{
+    margin: 0px;
+}
+.Contact{
+    margin: 0px;
+}
+.My-story{
+    margin: 0px;
+}
+.leftSidebar{
+    left: 0;
+}
+/*Sidebar*/

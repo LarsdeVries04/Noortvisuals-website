@@ -1,0 +1,26 @@
+{
+  "folders": [
+	{
+		"name": "TEST 2",
+		"path": "."
+	},
+	{
+		"name": "test projects",
+		"path": "../test projects"
+	},
+	{
+		"name": "website WEE",
+		"path": "../website WEE"
+	},
+	{
+		"name": "image",
+		"path": "../image"
+	},
+	{
+		"path": "../TEST 3D"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "TEST 2"
+  }
+}

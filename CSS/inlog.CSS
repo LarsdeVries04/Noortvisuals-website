@@ -1,0 +1,186 @@
+body{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inglogo{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    
+}
+.img-logo{
+    object-fit:cover;
+    flex: 0.15;
+    margin-left: 150px;
+    -webkit-box-reflect:below 5px linear-gradient(to bottom, rgba(0,0,0,0.01), rgba(0,0,0,0.5));
+}
+
+.NV-t{
+    font-size: 55px;
+    font-weight: 500;
+    font-family: Playfair Display, arial;
+    color: black;
+    text-decoration: none;
+    margin-left:-1px;
+    -webkit-box-reflect:below 5px linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+}
+.terug-a{
+    color: white;
+    position: absolute;
+    top:5px;
+    left:5px;
+    border: 2px solid rgb(19, 0, 36);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    font-weight: 700;
+    padding: 1px 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    background-color: rgb(19, 0, 36) ;
+    cursor: pointer;
+}
+.terug-a:hover{
+    color: rgb(19, 0, 36);
+    background-color: white;
+    transition: 0.5s;
+    transform: translateY(-2px);
+}
+.rightside{
+    color: rgb(255, 255, 255);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.sunset-img{
+    position: absolute;
+    
+}
+/*inlog-front*/
+.front{
+    border: 2px solid rgb(17, 1, 46);
+    background-color: rgba(47, 18, 73, 0.8);
+    height: 500px;
+    display: flex;
+    flex-direction:column; 
+    position: absolute;
+    transition: 1s; 
+    width: 442px;
+    opacity: 1;
+}
+.frontcss{
+    transform: rotateY(180deg); 
+    opacity: 0;
+    transition: 1s;
+}
+
+.sunset-img{
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    -webkit-box-reflect:left 0px linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0.3));
+}
+.inloggen-div{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.text-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column; 
+    height: 80%;
+}
+.inloggen-button{
+    font-size: 30px;
+    border: 2px solid white;
+    background-color: rgb(19, 0, 36);
+    padding: 2px 28px 4px 28px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.email-t, .password-t{
+    color: rgb(151, 110, 187);
+}
+.account{
+    font-size: small;
+    text-decoration: underline;
+    display: flex;
+    align-items:end;
+    cursor: pointer;
+    justify-content: center;
+}
+
+/*inlog-front*/
+/*account-back*/
+.back{
+    border: 2px solid rgb(17, 1, 46);
+    background-color: rgba(47, 18, 73, 0.8);
+    height: 500px;
+    display: flex;
+    flex-direction:column; 
+    position: absolute;
+    transition: 1s;
+    width: 442px;
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.backcss{
+    transform: rotateY(0deg);
+}
+.center-A{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column; 
+    height: 82%;
+}
+.account-A{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+.email, .password, .confirm{
+    background-color: white; 
+    border: 2px solid rgba(19, 0,36,1);
+    border-radius: 15px ;
+    outline: none;
+    margin:5px 0 10px 0;
+    padding: 5px 10px;
+    font-size: 20px;
+    width: 250px;
+}
+.create-div{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    border: 2px solid white;
+    background-color: rgb(19, 0, 36);
+    color: white;
+    padding: 8px 20px 8px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.inloggen-A{
+    font-size: small;
+    text-decoration: underline;
+    display: flex;
+    align-items:end;
+    cursor: pointer;
+    justify-content: center;
+}
+/*account-back*/
