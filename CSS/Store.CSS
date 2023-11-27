@@ -273,3 +273,26 @@ visibility: visible;
         grid-template-columns: repeat(1, 1fr);
     }
 }
+@media (max-width: 600px) {
+    .right-cat{
+        margin-right: 0px;
+    }
+    .Ricon{
+        padding: 0px;
+    }
+    .left-cat{
+        font-size: 20px;
+    }
+    .productfield{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .productimgdiv img{
+        height: 250px;
+    }
+    .productcart button{
+        padding: 0px 100px 0px 100px;
+    }
+}
+
+

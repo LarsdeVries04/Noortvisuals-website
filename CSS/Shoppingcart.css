@@ -2,7 +2,8 @@ body{
     margin: 0px;
     background-color: rgb(178, 202, 233);
     font-family: Arial;
-    padding: 100px 400px 0px 400px;
+    display: flex;
+   justify-content: center;
 }
 .back-to-shop{
     position: absolute;
@@ -21,6 +22,7 @@ body{
 .shoppingcartdiv{
     font-size: 30px;
     padding: 100px 0px 10px 0px;
+    margin-top: 100px;
 }
 .fa-cart-shopping{
     cursor: text;
@@ -45,7 +47,6 @@ body{
 .nothingincart span{
     font-size: 25px;
     font-style: italic;
-   
 }
 .cartitemdiv{
     border: 1px solid black;
@@ -122,10 +123,45 @@ body{
     background-color: white;
     border: 1px solid black;
     margin: 10px;
+    padding-bottom: 20px;
+    height: fit-content;
 }
 .overviewtext{
-    font-size: 25px;
+    font-size: 30px;
     font-style: italic;
     font-weight: 700;
     margin: 10px 0px 0px 10px;
+}
+.kosttext{
+    font-size: 20px;
+    margin: 10px;
+}
+.kost{
+    margin-top: 5px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+.kost span{
+    font-weight: 600;
+    font-style: italic;
+}
+.checkoutdiv{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.checkoutbutton{
+    font-size: 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(42, 95, 165);
+    color: white;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+}
+.checkoutbutton:hover{
+    background-color: rgb(28, 64, 112);
+    box-shadow: 1px 1px 1px rgb(194, 194, 194);
 }

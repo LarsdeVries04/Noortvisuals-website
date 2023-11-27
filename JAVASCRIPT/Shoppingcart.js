@@ -77,6 +77,8 @@ cartsummaryfunction();
 function overviewsurraryfunction() {
   let productpricecents = 0;
   let shipmentpricecents = 0;
+  
+  
   cart.forEach((cartItem) =>{
     let machingProducts;
     products.forEach((products) =>{
@@ -85,6 +87,8 @@ function overviewsurraryfunction() {
     }});
     productpricecents += machingProducts.pricecents * cartItem.quantity;
     shipmentpricecents += 500 * cartItem.quantity;
+    
+   
     });
   document.querySelector(".articlescost").innerHTML = ` $${(productpricecents/ 100).toFixed(2)}`;
   document.querySelector(".shipmentcost").innerHTML = ` $${(shipmentpricecents/ 100).toFixed(2)}`;
