@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Noort visuals</title>
+    <title>Noort visuals Settings</title>
     <link rel="icon" type="image/x-icon" href="../images/NV-logo.png" />
-    <link rel="stylesheet" href="../CSS/Socials.css" />
+    <link rel="stylesheet" href="../CSS/instellingen.css" />
     <link rel="stylesheet" href="../CSS/basic.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,46 +51,49 @@
         <a href="My-story.html"><p class="My-story">My story</p></a>
       </div>
       <div class="Instellingen">
-        <a href="instellingen.html">Settings</a>
+        <a class="Instellingen-a" href="instellingen.html">Settings</a>
       </div>
     </div>
-    <div class="icons-div">
-      <div class="bullit top-B"></div>
-      <div class="bullit"></div>
-      <div class="bullit bottem-B"></div>
-      <div class="Twitter-div media-div">
-        <a
-          class="Twitter-a media-a"
-          href="https://twitter.com/?lang=nl"
-          target="_blank"
-          ><i class="fa fa-twitter"></i
-        ></a>
-      </div>
-      <div class="instagram-div media-div">
-        <a
-          class="instagram-a media-a"
-          href="https://twitter.com/?lang=nl"
-          target="_blank"
-          ><i class="fa fa-instagram"></i
-        ></a>
-      </div>
-      <div class="facebook-div media-div">
-        <a
-          class="facebook-a media-a"
-          href="https://twitter.com/?lang=nl"
-          target="_blank"
-          ><i class="fa fa-facebook"></i
-        ></a>
-      </div>
-      <div class="tiktok-div media-div">
-        <a
-          class="tiktok-a media-a"
-          href="https://www.tiktok.com/@noort_visuals"
-          target="_blank"
-          ><i class="fa-brands fa-tiktok"></i
-        ></a>
+    <div class="settingheader">
+      <div class="settingstext">Settings:</div>
+      <div class="settingfilters">
+        <div class="accountdiv">Account</div>
+        <div class="statusdiv">Status</div>
+        <div class="storagediv">Storage</div>
       </div>
     </div>
-    <script src="../JAVASCRIPT/BasicJS.js"></script>
+    <div class="settingsbody">
+      <div class="accounttext">Account</div>
+      <div class="accountbody">
+        <div class="categorybaraccount">
+          <div class="Accountoverviewdiv">Accountoverview</div>
+          <div class="ordersdiv">Orders</div>
+          <div class="returnsdiv">Returns</div>
+          <div class="logoutdiv">Logout</div>
+        </div>
+        <div class="rightsideaccount">
+          <div class="profiletext">Profile</div>
+          <div class="accountemail">Email: -</div>
+          <div class="accountstatus">Status: visitor</div>
+          <div class="accountpassword">
+            Password: ****
+            <div class="changepassworddiv">Change password</div>
+          </div>
+
+          <div class="picturediv">
+              <label class="-label" for="file">
+                <span>Change Image</span>
+              </label>
+              <input id="file" type="file" onchange="loadFile(event)"/>
+              <img class="profilepictureimg" src="../images/7136522.png" id="output"/>
+            </div>
+              <div class="deletepicture">Delete picture</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="../JAVASCRIPT/BasicJS.js"></script>
+    <script type="module" src="../JAVASCRIPT/instellingen.js"></script>
+    <script src="../JAVASCRIPT/Inlog.js"></script>
   </body>
 </html>

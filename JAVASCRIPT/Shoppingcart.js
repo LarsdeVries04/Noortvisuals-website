@@ -13,7 +13,6 @@ cart.forEach((cartItem) =>{
             machingProducts = products;
         }
     });
-
     cartsummaryHTML +=`
       <div class="cartitems cart-${machingProducts.domname}">
         <div class="cartitemdiv">
@@ -33,8 +32,7 @@ cart.forEach((cartItem) =>{
             </div>
             <div class="rightbottomdiv">
             <div class="item-quantity">
-            <select>
-            <option selected value="0">${cartItem.quantity}</option>
+            <select class="selectquantity-${machingProducts.domname}" >
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -47,26 +45,38 @@ cart.forEach((cartItem) =>{
             <option value="10">10</option>
             </select>
             </div>
-            <span>Nu besteld, morgen in huis</span>
+            <span>Order now, delivered tomorrow</span>
             </div>
             </div>
         </div>
       </div>`;
 });
+
 document.querySelector(".cartitems").innerHTML = cartsummaryHTML;
+cart.forEach((cartItem) =>{
+  const productId = cartItem.productName;
+    let machingProducts;
+    products.forEach((products) =>{
+      if(products.domname === productId){
+        machingProducts = products;
+      }});
+  document.querySelector(`.selectquantity-${machingProducts.domname}`).value= cartItem.quantity;
+});
+
+
 document.querySelectorAll(".cancelitemdiv").forEach((link) =>{
   link.addEventListener("click", () =>{
   const productId = link.dataset.productId;
   removeFromCart(productId);
   document.querySelector(`.cart-${productId}`).remove();
   overviewsurraryfunction();
-  console.log(cartsummaryHTML)
   });
 });
 function nothingincart ()
 {if (!cartsummaryHTML){
   document.querySelector(".cartitems").innerHTML = ` <div class="nothingincart">
   <span>Shoppingcart is empty</span></div>`;
+  
 };};
 nothingincart();
 };

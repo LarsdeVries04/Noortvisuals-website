@@ -42,12 +42,52 @@ body{
 }
 .left-cat{
     display: flex;
+    flex: 1;
     align-items: center;
     width: 500px;
-    justify-content: space-around;
     font-size: 25px;
-    cursor: pointer;
     font-weight: 600;
+}
+.filterdiv{
+    background-color: rgb(178, 202, 233);;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    padding: 5px;
+}
+.categories{
+    position: absolute;
+    display: flex;
+    left: -100%;
+    transition: all 0.6s linear;
+    z-index: -1;
+    justify-content: space-around;
+    width: 500px;
+    cursor: pointer;
+    
+}
+.categories div{
+    padding: 5px;
+    border-radius: 5px;
+}
+.categories div:hover{
+    background-color: rgba(115, 138, 214, 0.295);
+}
+.movecategories{
+    left: 5%;
+    z-index: 0;
+}
+.categories div::after {
+    background-color: #000000; 
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    transition: all 0.2s linear;
+}
+.categories div.slidebeam::after{
+    width: 100%;
 }
 .fa-caret-down{
     margin-left: 5px;
@@ -125,36 +165,6 @@ visibility: visible;
 .heartIcon:hover .hoverHeart{
     visibility: visible;
 }
-.fotodiv{
-    position: relative;
-}
-.dropdown{
-    position: absolute;
-    background-color: rgb(211, 211, 211);
-    color:rgb(42, 95, 165);
-    display: flex;
-    width: 100%;
-    border: 1px solid rgb(119, 119, 119);
-    justify-content: center;
-    transition: 0.15s;
-    visibility: hidden;
-    display: block;
-    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.459);
-    
-}
-.dropdown a{
-    text-decoration: none;
-    font-size: 15px;
-    padding: 5px 0px;
-    display: block;
-}
-.dropdown a:hover{
-    background-color: rgb(190, 190, 190);
-    
-}
-.fotodiv:hover .dropdown{
-    visibility: visible;
-}
 /*category bar*/
 .upbutton{
     position: fixed;
@@ -204,6 +214,7 @@ visibility: visible;
     display: flex;
     justify-content: center;
     height: 100%;
+    cursor: pointer;
 }
 .productimgdiv img{
     object-fit: contain;
@@ -244,18 +255,98 @@ visibility: visible;
     flex: 1;
     justify-content: center; 
 }
-.productcart button{
+.Productcartbutton{
     padding: 0px 150px 0px 150px;
     border-radius: 30px;
     border: none;
     cursor: pointer;
     font-size: 50px;
-    background-color: rgb(42, 95, 165);
-    color: rgb(255, 255, 255);
+    background-color:rgb(42, 95, 165);
+    color:rgb(255, 255, 255);
 }
 .productcart button:hover{
     color: rgb(223, 223, 223);
-    background-color:  rgb(28, 64, 112);
+    background-color:rgb(28, 64, 112);
+}
+.productinfo{
+    background-color: rgb(255, 255, 255);
+    border:  rgb(42, 95, 165) solid 1px;
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    height:fit-content;
+    max-height: 603px;
+    width: 30%;
+    max-width: 800px;
+    overflow: scroll; 
+    visibility:hidden;
+    grid-template-columns: 5fr 1fr;
+}
+.infovisable{
+    visibility: visible;
+}
+.infotopleft{
+    display: flex;
+    flex-direction: column;
+}
+.infoname{
+    font-size: 30px;
+    font-weight: 600;
+    margin-left:10px;
+}
+.infoimg{
+    display: flex;
+    justify-content: center;
+    padding-right: 5px;
+    width: 100%;
+    height: 100%;
+   justify-content: center;
+}
+.infoimg img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.infotopright{
+    margin-top: 35px;
+    margin-left: 5px;
+}
+.infoprice{
+    color: red;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 0px 20px 0px;
+}
+.infoinventory{
+    display: inline-block;
+    color: rgb(0, 75, 0);
+    border: green solid 1px;
+    padding: 3px;
+}
+.infodelivery{
+    margin: 10px 0px 30px 0px;
+    color: rgb(0, 75, 0);
+    font-style: italic;
+}
+.info button{
+    padding: 0px 50px 0px 50px;
+}
+.productdescription p{
+font-size: 20px;
+font-weight: 600;
+}
+.productspecs p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.specificationtext p{
+    font-style: italic;
+    margin: 7px 0px;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 @media (max-width: 2000px) {

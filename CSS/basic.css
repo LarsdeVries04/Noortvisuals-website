@@ -55,7 +55,8 @@ a{
 .HAM-button:hover{
     background-color: rgb(220, 220, 220);
 }
-.a-font{text-decoration: none;
+.a-font{
+    text-decoration: none;
 }
 .account{
     background-color:  rgb(19, 0, 36);
@@ -78,9 +79,38 @@ a{
     background-color: rgb(255, 255, 255);
     color: rgb(19, 0, 36);
 }
+.userdiv{
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    transition: 500ms;
+}
+.userdiv:hover{
+    background-color: rgb(151, 151, 151);
+}
+.fa-user{
+    color: rgb(42, 95, 165);
+    font-size: 35px;
+    padding: 0px 3px 0px 3px;
+    transition: 500ms;
+}
+.fa-user:hover{
+    color: rgb(28, 64, 112);
+}
 @media (max-width: 1050px) {
     .NV-tekst {
       display: none;
+    }
+    .userdiv{
+        width: 60px;
+    height: 60px;
+    }
+    .fa-user{
+        font-size: 30px;
     }
   }
 /*Header*/
@@ -120,9 +150,11 @@ a{
 .Sidebar-div .Instellingen{
     position: absolute;
     bottom: 0px;
+   
 }
 .Instellingen a{
-    padding-right: 62px;
+    display: flex;
+    flex: 1;
 }
 .Socials{
     margin: 0px;

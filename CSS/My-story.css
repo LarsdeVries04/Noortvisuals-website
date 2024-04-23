@@ -16,8 +16,15 @@ body{
     padding-left: 2px;
 }
 .foto{
+    filter:blur(0px);
     -webkit-box-reflect:below 10px url(images/half\ box.psd);
+    transition: 1s;
+    
+
 }
 .scroll{
     -webkit-box-reflect:unset;
+}
+.foto:hover{
+    filter: none;
 }

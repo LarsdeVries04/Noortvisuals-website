@@ -42,9 +42,7 @@
           <a class="NV-tekst" href="../index.html">oort visuals</a>
         </div>
       </div>
-      <a class="a-font" href="Inlog.html"
-        ><div class="account">inloggen</div></a
-      >
+      <a class="a-font" href="Inlog.html"><div class="account">login</div></a>
     </header>
     <div class="Sidebar-div">
       <div>
@@ -52,7 +50,9 @@
         <a href="Store.html"> <p class="Contact">Store</p></a>
         <a href="My-story.html"><p class="My-story">My story</p></a>
       </div>
-      <div class="Instellingen"><a href="">Instellingen</a></div>
+      <div class="Instellingen">
+        <a href="instellingen.html">Settings</a>
+      </div>
     </div>
     <a href="#"
       ><button class="upbutton">
@@ -60,15 +60,13 @@
     ></a>
     <div class="catdiv">
       <div class="left-cat">
-        <div class="fotodiv">
-          foto's<i class="fa-solid fa-caret-down"></i>
-          <div class="dropdown">
-            <a class="dropcamera">Camera's</a>
-            <a href="#">Statieven</a>
-          </div>
+        <div class="filterdiv"><i class="fa-solid fa-filter"></i>filter</div>
+        <div class="categories">
+          <div class="camera" data-filter-id="camera">camera's</div>
+          <div class="statieven" data-filter-id="statieven">tripods</div>
+          <div class="drones" data-filter-id="drones">drones</div>
+          <div class="lenzen" data-filter-id="lenzen">lenses</div>
         </div>
-        <div class="video's">video's<i class="fa-solid fa-caret-down"></i></div>
-        <div class="eigenfilm">eigenfilm</div>
       </div>
       <div class="right-cat">
         <a href=""
@@ -88,7 +86,7 @@
       <div class="moveitem"></div>
     </div>
     <div class="productfield"></div>
-
+    <div class="productinfo"></div>
     <script src="../JAVASCRIPT/BasicJS.js"></script>
     <script type="module" src="../JAVASCRIPT/Store.js"></script>
   </body>

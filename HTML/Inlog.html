@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Inloggen Noort visuals</title>
+    <title>Login Noort visuals</title>
     <link rel="icon" type="image/x-icon" href="../images/NV-logo.png" />
     <link rel="stylesheet" href="../CSS/inlog.CSS" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,36 +21,43 @@
     <div class="rightside">
       <img class="sunset-img" src="../images/purple1.jpg" alt="sunset" />
       <div class="front">
-        <div class="inloggen-div">inloggen</div>
+        <div class="inloggen-div">Login</div>
         <div class="text-div">
           <div>
             <div class="email-t">Email address</div>
             <div class="email-div">
-              <input class="email" type="email" placeholder="E-mail" />
+              <input class="emailI email" type="email" placeholder="E-mail" />
             </div>
           </div>
           <div>
             <div class="password-t">Password</div>
             <div class="password-div">
-              <input class="password" type="password" placeholder="password" />
+              <input
+                class="passwordI password"
+                type="password"
+                placeholder="password"
+              />
             </div>
           </div>
-          <div class="inloggen-button">Inloggen</div>
-          <div><p></p></div>
+          <div class="inloggen-button">Login</div>
+          <div class="messagediv messagedivI"></div>
         </div>
-        <div class="account" onclick="draaiI()">account maken</div>
+        <div class="account">Create account</div>
       </div>
       <div class="back">
-        <div class="account-A">Create a account</div>
-
+        <div class="account-A">Create account</div>
         <div class="center-A">
           <div class="email-A">
             <div class="email-t">Email address</div>
-            <input class="email" type="email" placeholder="E-mail" />
+            <input class="emailA email" type="email" placeholder="E-mail" />
           </div>
           <div class="password-A">
-            <div class="password-t">Password</div>
-            <input class="password" type="password" placeholder="Password" />
+            <div class="password-t">Password (min 8 characters)</div>
+            <input
+              class="passwordA password"
+              type="password"
+              placeholder="Password"
+            />
           </div>
           <div class="confirm-A">
             <div class="password-t">Confirm Password</div>
@@ -61,10 +68,12 @@
             />
           </div>
           <div class="create-div">Create Account</div>
+          <div class="messagediv messagedivA"></div>
         </div>
-        <div class="inloggen-A" onclick="draaiA()">Inloggen</div>
+
+        <div class="inloggen-A">login</div>
       </div>
     </div>
-    <script src="../JAVASCRIPT/Inlog.js"></script>
+    <script type="module" src="../JAVASCRIPT/Inlog.js"></script>
   </body>
 </html>
